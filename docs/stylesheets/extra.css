@@ -94,30 +94,38 @@
    ------------------------------------------------------------------------- */
 
 .md-header {
-  background: var(--sdlc-bg);
-  color: var(--sdlc-text-hi);
+  background: #07191e;
+  color: #e7f5f1;
   box-shadow: none;
-  border-bottom: 1px solid var(--sdlc-border);
+  border-bottom: 1px solid #1c3a42;
 }
 
 .md-header__title {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
+  color: #e7f5f1;
+}
+
+.md-header__button.md-icon,
+.md-header__button.md-icon svg,
+.md-header nav svg {
+  color: #e7f5f1;
+  fill: #e7f5f1;
 }
 
 .md-search__input {
-  background-color: var(--sdlc-surface-2);
+  background-color: rgba(231, 245, 241, 0.08);
   border-radius: 8px;
-  color: var(--sdlc-text-hi);
+  color: #e7f5f1;
 }
 
 .md-search__input::placeholder {
-  color: var(--sdlc-text-lo);
+  color: rgba(231, 245, 241, 0.55);
   opacity: 1;
 }
 
 .md-search__icon svg {
-  fill: var(--sdlc-text-lo);
+  fill: #e7f5f1;
 }
 
 /* -------------------------------------------------------------------------
