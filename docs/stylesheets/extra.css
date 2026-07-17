@@ -245,11 +245,12 @@
   flex-shrink: 0;
 }
 
+.owner-badge[data-owner="harlyn"]::before  { background: #8b98ff; }
 .owner-badge[data-owner="jenilyn"]::before { background: #02f5a1; }
 .owner-badge[data-owner="daryll"]::before  { background: #4dd0e1; }
 .owner-badge[data-owner="reymel"]::before  { background: #f5c542; }
 .owner-badge[data-owner="vincent"]::before { background: #f76c9c; }
-.owner-badge[data-owner="harlyn"]::before  { background: #8b98ff; }
+
 
 /* -------------------------------------------------------------------------
    7. Admonitions
