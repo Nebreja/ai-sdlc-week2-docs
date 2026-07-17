@@ -48,6 +48,8 @@
 
   --md-default-bg-color:        var(--sdlc-bg);
   --md-primary-fg-color:        #07191e;
+  --md-primary-bg-color:        var(--sdlc-text-hi);
+  --md-primary-bg-color--light: var(--sdlc-text-lo);
   --md-typeset-a-color:         #04b57e;
 
   --sdlc-accent:      #04b57e;
@@ -106,6 +108,16 @@
 .md-search__input {
   background-color: var(--sdlc-surface-2);
   border-radius: 8px;
+  color: var(--sdlc-text-hi);
+}
+
+.md-search__input::placeholder {
+  color: var(--sdlc-text-lo);
+  opacity: 1;
+}
+
+.md-search__icon svg {
+  fill: var(--sdlc-text-lo);
 }
 
 /* -------------------------------------------------------------------------
