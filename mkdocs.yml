@@ -1,0 +1,10 @@
+site_name: AI SDLC Workflow — Week 2 Docs
+nav:
+  - Home: index.md
+  - Architecture (Jenilyn): architecture.md
+  - Development (Daryll): development.md
+  - RAG Knowledgebase (Reymel): rag-knowledgebase.md
+  - Testing & Observability (Vincent): testing-observability.md
+  - PM Notes (Harlyn): pm-notes.md
+theme:
+  name: material
