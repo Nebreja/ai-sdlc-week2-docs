@@ -15,16 +15,16 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: green
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: black
+      accent: green
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -34,20 +34,19 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.tabs
     - navigation.sections
+    - navigation.expand
+    - navigation.indexes
     - navigation.top
     - navigation.instant
-    - navigation.tracking
     - navigation.footer
-    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
-    - content.tabs.link
     - content.tooltips
     - toc.follow
+    - toc.integrate
 
 markdown_extensions:
   - admonition
