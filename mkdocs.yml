@@ -3,11 +3,11 @@ site_description: Planning, architecture, development, RAG, and testing — one 
 
 nav:
   - Home: index.md
+  - PM Notes: pm-notes.md
   - Architecture: architecture.md
   - Development: development.md
   - RAG Knowledgebase: rag-knowledgebase.md
   - Testing & Observability: testing-observability.md
-  - PM Notes: pm-notes.md
 
 theme:
   name: material
