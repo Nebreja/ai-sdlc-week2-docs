@@ -3,11 +3,11 @@ site_description: Planning, architecture, development, RAG, and testing — one 
 
 nav:
   - Home: index.md
-  - Architecture (Jenilyn): architecture.md
-  - Development (Daryll): development.md
-  - RAG Knowledgebase (Reymel): rag-knowledgebase.md
-  - Testing & Observability (Vincent): testing-observability.md
-  - PM Notes (Harlyn): pm-notes.md
+  - Architecture: architecture.md
+  - Development: development.md
+  - RAG Knowledgebase: rag-knowledgebase.md
+  - Testing & Observability: testing-observability.md
+  - PM Notes: pm-notes.md
 
 theme:
   name: material
@@ -16,7 +16,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: teal
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
@@ -24,7 +24,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
-      accent: teal
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -39,24 +39,54 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.tracking
+    - navigation.footer
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
     - content.tabs.link
+    - content.tooltips
     - toc.follow
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - tables
+  - footnotes
   - toc:
       permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
-  - tables
-  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark
+  - pymdownx.critic
 
 extra_css:
   - stylesheets/extra.css
+
+# Team reference — apply on each page's H1 with an inline span, e.g.:
+#   # Architecture <span class="owner-badge" data-owner="jenilyn">Jenilyn</span>
+#
+# Recognized data-owner values (each gets its own accent dot):
+#   jenilyn   -> Architecture
+#   daryll    -> Development
+#   reymel    -> RAG Knowledgebase
+#   vincent   -> Testing & Observability
+#   harlyn    -> PM Notes
