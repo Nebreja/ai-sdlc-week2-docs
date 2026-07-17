@@ -1,4 +1,6 @@
 site_name: AI SDLC Workflow — Week 2 Docs
+site_description: Planning, architecture, development, RAG, and testing — one open-source, BYOK toolchain.
+
 nav:
   - Home: index.md
   - Architecture (Jenilyn): architecture.md
@@ -6,5 +8,55 @@ nav:
   - RAG Knowledgebase (Reymel): rag-knowledgebase.md
   - Testing & Observability (Vincent): testing-observability.md
   - PM Notes (Harlyn): pm-notes.md
+
 theme:
   name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
