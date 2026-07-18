@@ -1,4 +1,4 @@
-# PM Notes <span class="owner-badge" data-owner="harlyn">Harlyn</span>
+# Plane + MkDocs <span class="owner-badge" data-owner="harlyn">Harlyn</span>
 
 Board setup steps, milestone status, and screenshots for the AI SDLC Workflow project — kept here as the running log for coordinating the five stages across the team.
 
