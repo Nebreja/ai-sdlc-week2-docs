@@ -1,4 +1,4 @@
-# Cognexa
+# Cognexa <span class="owner-badge" data-owner="reymel">Reymel</span>
 
 Cognexa is a self-hosted AI knowledge base. Users upload documents (PDF, DOCX,
 images), the system indexes them for semantic search, and a chat interface
